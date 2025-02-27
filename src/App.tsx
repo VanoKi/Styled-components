@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import styled from 'styled-components'
 import { StyledBnt } from './components/Button.styled'
+import { StyledLink } from './components/StyledLink.styled'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -26,15 +27,6 @@ function App() {
 }
 
 export default App
-
-const StyledLink = styled.a`
-  border: none;
-  background-color: lightblue;
-  padding: 10px;
-  color: blue;
-  font-size: 2rem;
-  font-weight: bold;
-`
 
 const SuperBtn = styled(StyledBnt)`
     border-radius: 5px;
