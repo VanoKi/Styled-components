@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import styled from 'styled-components'
 
@@ -9,11 +7,18 @@ function App() {
 
   return (
     <div>
-      Hello
+      <StyledBnt>Hello</StyledBnt>
     </div>
   )
 }
 
 export default App
 
-const StyledBnt = styled
+const StyledBnt = styled.button`
+  border: none;
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  color: snow;
+  font-size: 2rem;
+`
