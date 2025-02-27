@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import styled from 'styled-components'
-import { StyledBnt } from './components/Button.styled'
+import { StyledBnt, SuperBtn } from './components/Button.styled'
 import { StyledLink } from './components/StyledLink.styled'
+import { Menu } from './components/Menu.styled'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -28,12 +29,6 @@ function App() {
 
 export default App
 
-const SuperBtn = styled(StyledBnt)`
-    border-radius: 5px;
-    background: yellowgreen;
-    color: darkgrey;
-`
-
 const Box = styled.div`
     height: 100vh;
     display: flex;
@@ -50,19 +45,4 @@ const Box = styled.div`
       cursor: zoom-out;
     }
 
-`
-
-const Menu = styled.nav`
-  ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    li > a {
-      color: green;
-    }
-    li + li {
-      margin-left: 20px;
-    }
-  }
 `

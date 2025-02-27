@@ -15,3 +15,9 @@ export const StyledBnt = styled.button`
     background-color: #304010;
   }
 `
+
+export const SuperBtn = styled(StyledBnt)`
+    border-radius: 5px;
+    background: yellowgreen;
+    color: darkgrey;
+`
