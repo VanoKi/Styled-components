@@ -7,7 +7,10 @@ function App() {
 
   return (
     <div>
-      <StyledBnt>Hello</StyledBnt>
+        <Box>
+            <StyledBnt>Hello</StyledBnt>
+            <SuperBtn>Bye</SuperBtn>
+        </Box>
     </div>
   )
 }
@@ -18,7 +21,21 @@ const StyledBnt = styled.button`
   border: none;
   background-color: red;
   padding: 10px;
-  border-radius: 5px;
   color: snow;
   font-size: 2rem;
+`
+
+const SuperBtn = styled(StyledBnt)`
+    border-radius: 5px;
+    background: yellowgreen;
+    color: darkgrey;
+`
+
+const Box = styled.div`
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 `
