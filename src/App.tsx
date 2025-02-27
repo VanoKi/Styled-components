@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import styled from 'styled-components'
+import { StyledBnt } from './components/Button.styled'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -26,21 +27,6 @@ function App() {
 
 export default App
 
-const StyledBnt = styled.button`
-  border: none;
-  background-color: red;
-  padding: 10px;
-  color: snow;
-  font-size: 2rem;
-  font-weight: bold;
-  
-  &:hover{
-    background-color: #681368;
-  }
-  &:last-child {
-    background-color: #304010;
-  }
-`
 const StyledLink = styled.a`
   border: none;
   background-color: lightblue;
