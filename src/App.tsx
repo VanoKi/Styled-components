@@ -26,6 +26,13 @@ const StyledBnt = styled.button`
   color: snow;
   font-size: 2rem;
   font-weight: bold;
+  
+  &:hover{
+    background-color: #681368;
+  }
+  &:last-child {
+    background-color: #304010;
+  }
 `
 const StyledLink = styled.a`
   border: none;
@@ -49,4 +56,8 @@ const Box = styled.div`
     gap: 20px;
     justify-content: center;
     align-items: center;
+
+    button {
+      cursor: pointer;
+    }
 `
