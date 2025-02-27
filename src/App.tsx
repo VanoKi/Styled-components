@@ -83,5 +83,8 @@ const Menu = styled.nav`
     li > a {
       color: green;
     }
+    li + li {
+      margin-left: 20px;
+    }
   }
 `
