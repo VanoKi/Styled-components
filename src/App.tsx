@@ -32,7 +32,7 @@ export default App
 const Box = styled.div`
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -45,4 +45,7 @@ const Box = styled.div`
       cursor: zoom-out;
     }
 
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
 `
