@@ -7,6 +7,13 @@ function App() {
 
   return (
     <div>
+      <Menu>
+        <ul>
+          <li><a href="#">menu item 1</a></li>
+          <li><a href="#">menu item 2</a></li>
+          <li><a href="#">menu item 3</a></li>
+        </ul>
+      </Menu>
         <Box>
             <StyledBnt as={StyledLink} href={'#'}>Link Component</StyledBnt>
             <StyledBnt as="a" href={'#'}>Link</StyledBnt>
@@ -60,4 +67,21 @@ const Box = styled.div`
     button {
       cursor: pointer;
     }
+
+    ${StyledLink} {
+      cursor: zoom-out;
+    }
+
+`
+
+const Menu = styled.nav`
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    li > a {
+      color: green;
+    }
+  }
 `
