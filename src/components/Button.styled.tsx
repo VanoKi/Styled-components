@@ -14,7 +14,7 @@ export const StyledBnt = styled.button<StyledBtnPropsType>`
   padding: 10px 20px;
   /* color: snow; */
   /* font-size: 2rem; */
-  font-size: ${props => props.fontSize};
+  font-size: ${props => props.fontSize || '2rem'};
   font-weight: bold;
   border-radius: 10px;
   &:hover{
@@ -27,6 +27,11 @@ export const StyledBnt = styled.button<StyledBtnPropsType>`
     border: 2px solid ${props => props.color || '#fb3f78'};
     color: ${props => props.color || '#fb3f78'};
     background-color: transparent;
+    &:hover {
+      border-color: blue;
+      color: blue;
+      background-color: transparent;
+    }
   `}
   ${props => props.primary && css<StyledBtnPropsType>`
     // primary
