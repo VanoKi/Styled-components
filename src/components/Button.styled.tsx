@@ -21,5 +21,5 @@ export const SuperBtn = styled(StyledBnt)`
     border-radius: 5px;
     background: yellowgreen;
     color: darkgrey;
-    animation: ${MyAnimation} 2s ease-in-out;
+    &:hover{animation: ${MyAnimation} 2s ease-in-out infinite;}
 `
