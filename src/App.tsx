@@ -10,18 +10,19 @@ function App() {
 
   return (
     <div>
-      <Menu>
+      {/* <Menu>
         <ul>
           <li><a href="#">menu item 1</a></li>
           <li><a href="#">menu item 2</a></li>
           <li><a href="#">menu item 3</a></li>
         </ul>
-      </Menu>
+      </Menu> */}
         <Box>
-            <StyledBnt as={StyledLink} href={'#'}>Link Component</StyledBnt>
-            <StyledBnt as="a" href={'#'}>Link</StyledBnt>
+            {/* <StyledBnt as={StyledLink} href={'#'}>Link Component</StyledBnt>
+            <StyledBnt as="a" href={'#'}>Link</StyledBnt> */}
+            <StyledBnt color='green'>Hello</StyledBnt>
             <StyledBnt>Hello</StyledBnt>
-            <SuperBtn>Bye</SuperBtn>
+            {/* <SuperBtn>Bye</SuperBtn> */}
         </Box>
     </div>
   )
