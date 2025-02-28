@@ -10,7 +10,13 @@ function App() {
   return (
     <div>
         <Card>
-
+          <Img></Img>
+          <Title>Headline</Title>
+          <SubTitle>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</SubTitle>
+          <BtnWrap>
+            <Btn></Btn>
+            <Btn></Btn>
+          </BtnWrap>
         </Card>
     </div>
   )
