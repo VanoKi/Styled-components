@@ -11,6 +11,6 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background-color: ${myTheme.colors.grey.dark};
+        background-color: ${myTheme.colors.grey.light};
     }
 `

@@ -4,7 +4,7 @@ export const myTheme = {
         secondary: `pink`,
         grey: {
             dark: '#4c4c4c',
-            light: `#bbb9b9`
+            light: `#bdbcbc`
         }
     },
     media: {

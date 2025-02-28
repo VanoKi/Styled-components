@@ -10,8 +10,7 @@ function App() {
   return (
     <div>
         <Box>
-            <StyledBnt color={myTheme.colors.primary} btnType={'primary'} active>Hello</StyledBnt>
-            <StyledBnt color={myTheme.colors.secondary} btnType={'outlined'} active>Hello</StyledBnt>
+          
         </Box>
     </div>
   )
