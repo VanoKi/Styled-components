@@ -9,22 +9,27 @@ function App() {
 
   return (
     <div>
-        <Box>
-          
-        </Box>
+        <Card>
+
+        </Card>
     </div>
   )
 }
 
 export default App
 
-const Box = styled.div`
-    height: 100vh;
+const Card = styled.div`
+    margin: auto;
+    width: 300px;
+    height: 300px;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
+    /* gap: 20px; */
     justify-content: center;
     align-items: center;
+    background: #fff;
+    box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 
     button {
       cursor: pointer;
