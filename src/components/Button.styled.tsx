@@ -1,13 +1,18 @@
 import styled from "styled-components";
 import { MyAnimation } from "../styles/Animations/Animations";
 
-export const StyledBnt = styled.button`
+type StyledBtnPropsType = {
+  color?: string
+  fontSize?: string
+}
+export const StyledBnt = styled.button<StyledBtnPropsType>`
   border: none;
   /* background-color: red; */
   background-color: ${props => props.color || `#fb3f78`};
-  padding: 10px;
+  padding: 10px 20px;
   color: snow;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: ${props => props.fontSize};
   font-weight: bold;
   border-radius: 10px;
   &:hover{

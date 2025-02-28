@@ -20,8 +20,11 @@ function App() {
         <Box>
             {/* <StyledBnt as={StyledLink} href={'#'}>Link Component</StyledBnt>
             <StyledBnt as="a" href={'#'}>Link</StyledBnt> */}
-            <StyledBnt color='green'>Hello</StyledBnt>
-            <StyledBnt>Hello</StyledBnt>
+            <StyledBnt color='green'
+                      fontSize={'20px'}
+              >Hello</StyledBnt>
+            <StyledBnt color='red'>Hello</StyledBnt>
+            <StyledBnt fontSize={'30px'}>Hello</StyledBnt>
             {/* <SuperBtn>Bye</SuperBtn> */}
         </Box>
     </div>
