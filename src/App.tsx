@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import styled from 'styled-components'
 import { StyledBnt} from './components/Button.styled'
+import { myTheme } from './styles/Theme.styled'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -9,8 +10,8 @@ function App() {
   return (
     <div>
         <Box>
-            <StyledBnt btnType={'primary'} active>Hello</StyledBnt>
-            <StyledBnt btnType={'outlined'} active>Hello</StyledBnt>
+            <StyledBnt color={myTheme.colors.primary} btnType={'primary'} active>Hello</StyledBnt>
+            <StyledBnt color={myTheme.colors.secondary} btnType={'outlined'} active>Hello</StyledBnt>
         </Box>
     </div>
   )
@@ -30,7 +31,7 @@ const Box = styled.div`
       cursor: pointer;
     }
 
-    @media screen and (max-width: 800px) {
+    @media ${myTheme.media.tablet} {
       flex-direction: column;
     }
 `
