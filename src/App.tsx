@@ -9,8 +9,8 @@ function App() {
   return (
     <div>
         <Box>
-            <StyledBnt primary >Hello</StyledBnt>
-            <StyledBnt outlined >Hello</StyledBnt>
+            <StyledBnt btnType={'primary'} active>Hello</StyledBnt>
+            <StyledBnt btnType={'outlined'} active>Hello</StyledBnt>
         </Box>
     </div>
   )
