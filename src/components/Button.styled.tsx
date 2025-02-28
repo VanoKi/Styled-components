@@ -1,16 +1,18 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { MyAnimation } from "../styles/Animations/Animations";
 
 type StyledBtnPropsType = {
   color?: string
   fontSize?: string
+  primary?: boolean
+  outlined?: boolean
 }
 export const StyledBnt = styled.button<StyledBtnPropsType>`
   border: none;
   /* background-color: red; */
-  background-color: ${props => props.color || `#fb3f78`};
+  /* background-color: ${props => props.color || `#fb3f78`}; */
   padding: 10px 20px;
-  color: snow;
+  /* color: snow; */
   /* font-size: 2rem; */
   font-size: ${props => props.fontSize};
   font-weight: bold;
@@ -21,6 +23,16 @@ export const StyledBnt = styled.button<StyledBtnPropsType>`
   /* &:last-child {
     background-color: #304010; */
   /* } */
+  ${props => props.outlined && css<StyledBtnPropsType>`
+    border: 2px solid ${props => props.color || '#fb3f78'};
+    color: ${props => props.color || '#fb3f78'};
+    background-color: transparent;
+  `}
+  ${props => props.primary && css<StyledBtnPropsType>`
+    // primary
+    background-color: ${props => props.color || '#fb3f78'};
+    color: snow;
+  `}
 `
 
 // export const SuperBtn = styled(StyledBnt)`
