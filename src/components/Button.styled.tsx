@@ -15,6 +15,9 @@ export const StyledBnt = styled.button<StyledBtnPropsType>`
   border-radius: 10px;
   &:hover{
     background-color: #681368;
+    ${props => props.active === true && css<StyledBtnPropsType>`
+    box-shadow: 5px 5px 5px 5px #25252c;
+  `}
   }
 
   ${props => props.btnType === 'outlined' && css<StyledBtnPropsType>`
@@ -31,8 +34,5 @@ export const StyledBnt = styled.button<StyledBtnPropsType>`
     // primary
     background-color: ${props => props.color || '#fb3f78'};
     color: snow;
-  `}
-  ${props => props.active === true && css<StyledBtnPropsType>`
-    box-shadow: 5px 5px 5px 5px #25252c;
   `}
 `
