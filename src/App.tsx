@@ -6,17 +6,15 @@ function App() {
     // const [count, setCount] = useState(0)
 
     return (
-        <div>
-            <StyledCard>
-                <Img></Img>
-                <Title>Headline</Title>
-                <SubTitle>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</SubTitle>
-                <BtnWrap>
-                    <Btn>See more</Btn>
-                    <Btn>Save</Btn>
-                </BtnWrap>
-            </StyledCard>
-        </div>
+        <StyledCard>
+            <Img></Img>
+            <Title>Headline</Title>
+            <SubTitle>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</SubTitle>
+            <BtnWrap>
+                <Btn>See more</Btn>
+                <Btn>Save</Btn>
+            </BtnWrap>
+        </StyledCard>
     )
 }
 
@@ -60,6 +58,7 @@ const SubTitle = styled.p`
     color: #abb3ba;
 `
 const BtnWrap = styled.div`
+    width: 100%;
     display: flex;
     gap: 12px;
 `
