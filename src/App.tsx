@@ -12,8 +12,8 @@ function App() {
                 <Title>Headline</Title>
                 <SubTitle>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</SubTitle>
                 <BtnWrap>
-                    <Btn></Btn>
-                    <Btn></Btn>
+                    <Btn>See more</Btn>
+                    <Btn>Save</Btn>
                 </BtnWrap>
             </StyledCard>
         </div>
@@ -52,9 +52,11 @@ const Title = styled.h1`
     color: #000;
 `
 const SubTitle = styled.p`
+    padding: 0 10px;
     font-weight: 500;
     font-size: 12px;
     line-height: 167%;
+    //text-align: justify;
     color: #abb3ba;
 `
 const BtnWrap = styled.div`
