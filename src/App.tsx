@@ -1,13 +1,14 @@
 import './App.css'
 import styled from 'styled-components'
 import {myTheme} from './styles/Theme.styled'
+import photo from './assets/Rectangle 1.png'
 
 function App() {
     // const [count, setCount] = useState(0)
 
     return (
         <StyledCard>
-            <Img></Img>
+            <Img src={photo} alt={'photo'}></Img>
             <Title>Headline</Title>
             <SubTitle>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</SubTitle>
             <BtnWrap>
@@ -43,7 +44,11 @@ const StyledCard = styled.div`
         flex-direction: column;
     }
 `
-const Img = styled.img``
+const Img = styled.img`
+    border-radius: 10px;
+    width: 280px;
+    height: 170px;
+`
 const Title = styled.h1`
     font-weight: 700;
     font-size: 16px;
@@ -65,4 +70,6 @@ const BtnWrap = styled.div`
 const Btn = styled.button`
     width: 86px;
     height: 30px;
+    border: 2px solid #4e71fe;
+    border-radius: 2px;
 `
