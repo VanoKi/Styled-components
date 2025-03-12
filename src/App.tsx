@@ -12,7 +12,7 @@ function App() {
             <Title>Headline</Title>
             <SubTitle>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</SubTitle>
             <BtnWrap>
-                <Btn>See more</Btn>
+                <Btn >See more</Btn>
                 <Btn>Save</Btn>
             </BtnWrap>
         </StyledCard>
@@ -71,5 +71,11 @@ const Btn = styled.button`
     width: 86px;
     height: 30px;
     border: 2px solid #4e71fe;
-    border-radius: 2px;
+    border-radius: 5px;
+    color: #4e71fe;
+    background: transparent;
+    &:hover {
+        background: #4e71fe;
+        color: #fff;
+    }
 `
