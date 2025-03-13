@@ -1,5 +1,5 @@
 import './App.css'
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import {myTheme} from './styles/Theme.tsx'
 import photo from './assets/Rectangle 1.png'
 
@@ -67,7 +67,13 @@ const BtnWrap = styled.div`
     display: flex;
     gap: 12px;
 `
-const Btn = styled.button`
+type StyledBtnPropsType = {
+    color?: string
+    fontSize?: string
+    btnType: 'primary' | 'secondary'
+    active: boolean
+}
+const Btn = styled.button<StyledBtnPropsType>`
     width: 86px;
     height: 30px;
     border: 2px solid ${myTheme.colors.accent};
