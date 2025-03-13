@@ -5,7 +5,8 @@ export const myTheme = {
         grey: {
             dark: '#4c4c4c',
             light: `#bdbcbc`
-        }
+        },
+        accent: '#4e71fe'
     },
     media: {
         tablet: 'sceen and (max-width: 768px) and (min-width: 577px)',

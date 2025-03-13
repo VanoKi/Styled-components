@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import { GlobalStyles } from './styles/GlobalStyles/GlobalStyles.tsx'
 import { ThemeProvider } from 'styled-components'
-import { myTheme } from './styles/Theme.styled.tsx'
+import { myTheme } from './styles/Theme.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <ThemeProvider theme={myTheme}>

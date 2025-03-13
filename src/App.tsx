@@ -1,6 +1,6 @@
 import './App.css'
 import styled from 'styled-components'
-import {myTheme} from './styles/Theme.styled'
+import {myTheme} from './styles/Theme.tsx'
 import photo from './assets/Rectangle 1.png'
 
 function App() {
@@ -70,12 +70,12 @@ const BtnWrap = styled.div`
 const Btn = styled.button`
     width: 86px;
     height: 30px;
-    border: 2px solid #4e71fe;
+    border: 2px solid ${myTheme.colors.accent};
     border-radius: 5px;
-    color: #4e71fe;
+    color: ${myTheme.colors.accent};
     background: transparent;
     &:hover {
-        background: #4e71fe;
+        background: ${myTheme.colors.accent};
         color: #fff;
     }
 `
