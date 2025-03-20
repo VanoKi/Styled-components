@@ -13,7 +13,25 @@ function App() {
                 <Title>Headline</Title>
                 <SubTitle>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</SubTitle>
                 <BtnWrap>
-                    <BtnDark >See more</BtnDark>
+                    <Btn >See more</Btn>
+                    <Btn>Save</Btn>
+                </BtnWrap>
+            </StyledCard>
+            <StyledCard>
+                <Img src={photo} alt={'photo'}></Img>
+                <Title>Headline</Title>
+                <SubTitle>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</SubTitle>
+                <BtnWrap>
+                    <Btn >See more</Btn>
+                    <Btn>Save</Btn>
+                </BtnWrap>
+            </StyledCard>
+            <StyledCard>
+                <Img src={photo} alt={'photo'}></Img>
+                <Title>Headline</Title>
+                <SubTitle>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</SubTitle>
+                <BtnWrap>
+                    <Btn >See more</Btn>
                     <Btn>Save</Btn>
                 </BtnWrap>
             </StyledCard>
