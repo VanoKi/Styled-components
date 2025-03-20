@@ -7,19 +7,28 @@ function App() {
     // const [count, setCount] = useState(0)
 
     return (
-        <StyledCard>
-            <Img src={photo} alt={'photo'}></Img>
-            <Title>Headline</Title>
-            <SubTitle>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</SubTitle>
-            <BtnWrap>
-                <Btn >See more</Btn>
-                <Btn>Save</Btn>
-            </BtnWrap>
-        </StyledCard>
+        <Box>
+            <StyledCard>
+                <Img src={photo} alt={'photo'}></Img>
+                <Title>Headline</Title>
+                <SubTitle>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</SubTitle>
+                <BtnWrap>
+                    <Btn >See more</Btn>
+                    <Btn>Save</Btn>
+                </BtnWrap>
+            </StyledCard>
+        </Box>
     )
 }
 
 export default App
+
+const Box = styled.div`
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
 
 const StyledCard = styled.div`
     margin: auto;
