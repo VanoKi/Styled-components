@@ -13,7 +13,7 @@ function App() {
                 <Title>Headline</Title>
                 <SubTitle>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</SubTitle>
                 <BtnWrap>
-                    <Btn >See more</Btn>
+                    <BtnDark >See more</BtnDark>
                     <Btn>Save</Btn>
                 </BtnWrap>
             </StyledCard>
@@ -28,8 +28,8 @@ const Box = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 `
-
 const StyledCard = styled.div`
     margin: auto;
     padding: 10px;
@@ -92,5 +92,16 @@ const Btn = styled.button<StyledBtnPropsType>`
     &:hover {
         background: ${myTheme.colors.accent};
         color: #fff;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+`
+const BtnDark = styled(Btn)`
+    background: ${myTheme.colors.accent};
+    color: #fff;
+    &:hover {
+        background: transparent;
+        color: ${myTheme.colors.accent};
     }
 `
